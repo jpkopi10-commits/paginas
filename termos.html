@@ -1,1 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Termos de Uso | Larissa Ferreira Denck</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, Arial, sans-serif; }
+    :root {
+        --verde-escuro: #0d3b1f; --verde-medio: #1b6b34; --verde-claro: #2e9e4f;
+        --amarelo: #ffc107; --cinza-borda: #e0e6e0; --texto: #1f2d24; --texto-suave: #5a6b60;
+    }
+    body { background: #f7f9f7; color: var(--texto); line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
 
+    .topbar { background: var(--verde-escuro); color: #fff; font-size: 0.8rem; text-align: center; padding: 9px 15px; }
+    .topbar strong { color: var(--amarelo); }
+
+    header { background: #fff; border-bottom: 1px solid var(--cinza-borda); position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    .header-main { max-width: 1280px; margin: 0 auto; padding: 16px 20px; display: flex; align-items: center; gap: 25px; }
+    .logo-area { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+    .logo-icon { width: 55px; height: 55px; background: linear-gradient(135deg, var(--verde-medio), var(--verde-claro)); border-radius: 14px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.7rem; }
+    .logo-text h1 { font-size: 1.15rem; color: var(--verde-escuro); font-weight: 800; line-height: 1.15; }
+    .logo-text span { font-size: 0.72rem; color: var(--texto-suave); font-weight: 500; }
+
+    .header-icons { display: flex; gap: 20px; align-items: center; margin-left: auto; }
+    .icon-btn { display: flex; flex-direction: column; align-items: center; gap: 3px; text-decoration: none; color: var(--texto); font-size: 0.72rem; font-weight: 600; }
+    .icon-btn:hover { color: var(--verde-medio); }
+    .icon-btn .ico { font-size: 1.5rem; }
+
+    .menu-categorias { background: var(--verde-medio); }
+    .menu-inner { max-width: 1280px; margin: 0 auto; padding: 0 20px; display: flex; gap: 3px; overflow-x: auto; }
+    .menu-inner a { color: #fff; text-decoration: none; padding: 14px 18px; font-size: 0.86rem; font-weight: 600; white-space: nowrap; border-bottom: 3px solid transparent; display: flex; align-items: center; gap: 6px; }
+    .menu-inner a:hover, .menu-inner a.ativo { background: rgba(255,255,255,0.13); border-bottom-color: var(--amarelo); }
+
+    .pagina { max-width: 1000px; margin: 0 auto; padding: 55px 20px; width: 100%; flex: 1; }
+    .pagina h2 { color: var(--verde-escuro); font-size: 2.2rem; margin-bottom: 25px; border-left: 6px solid var(--amarelo); padding-left: 18px; }
+    .pagina h3 { color: var(--verde-medio); font-size: 1.2rem; margin: 26px 0 10px; }
+    .pagina p { margin-bottom: 14px; color: #33443a; text-align: justify; }
+    .pagina ul { margin: 0 0 15px 25px; color: #33443a; }
+    .pagina ul li { margin-bottom: 8px; }
+    .pagina a { color: var(--verde-medio); font-weight: 600; text-decoration: none; }
+    .pagina a:hover { text-decoration: underline; }
+
+    footer { background: var(--verde-escuro); color: #d7e3d9; padding: 50px 20px 20px; margin-top: auto; }
+    .footer-inner { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 35px; }
+    .footer-col h4 { color: var(--amarelo); font-size: 0.95rem; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; }
+    .footer-col p, .footer-col a { font-size: 0.88rem; color: #d7e3d9; text-decoration: none; display: block; margin-bottom: 8px; line-height: 1.5; }
+    .footer-col a:hover { color: var(--amarelo); }
+    .footer-horario { background: rgba(255,255,255,0.07); border-left: 3px solid var(--amarelo); padding: 12px 15px; border-radius: 6px; margin-top: 8px; }
+    .footer-horario .hora { font-size: 1.02rem; font-weight: 700; color: #fff; margin-bottom: 5px; }
+    .footer-bottom { max-width: 1280px; margin: 35px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.12); text-align: center; font-size: 0.78rem; color: #a8bfae; line-height: 1.8; }
+
+    @media (max-width: 600px) {
+        .logo-text h1 { font-size: 1rem; }
+        .logo-text span { font-size: 0.65rem; }
+        .logo-icon { width: 45px; height: 45px; font-size: 1.4rem; }
+        .icon-btn .txt { display: none; }
+        .pagina h2 { font-size: 1.5rem; }
+        .menu-inner a { padding: 12px 14px; font-size: 0.8rem; }
+    }
+</style>
+</head>
+<body>
+
+<div class="topbar">🚚 Entregamos em <strong>São Bento do Sul e região</strong> — Alimentos preparados com qualidade!</div>
+
+<header>
+    <div class="header-main">
+        <a href="index.html" class="logo-area">
+            <div class="logo-icon">🍲</div>
+            <div class="logo-text">
+                <h1>Larissa Ferreira Denck</h1>
+                <span>Alimentos Preparados para Consumo Domiciliar</span>
+            </div>
+        </a>
+        <div class="header-icons">
+            <a href="https://wa.me/5547989115054" target="_blank" class="icon-btn">
+                <span class="ico">💬</span><span class="txt">WhatsApp</span>
+            </a>
+            <a href="tel:+5547989115054" class="icon-btn">
+                <span class="ico">📞</span><span class="txt">Ligar</span>
+            </a>
+        </div>
+    </div>
+
+    <nav class="menu-categorias">
+        <div class="menu-inner">
+            <a href="index.html">🏠 Início</a>
+            <a href="sobre.html">ℹ️ Sobre</a>
+            <a href="politicas.html">🔒 Privacidade</a>
+            <a href="termos.html" class="ativo">📄 Termos</a>
+        </div>
+    </nav>
+</header>
+
+<main class="pagina">
+    <h2>Termos de Uso</h2>
+
+    <p>Bem-vindo ao site da <strong>61.032.057 Larissa Ferreira Denck</strong>. Ao acessar e utilizar este site, você concorda com os seguintes Termos de Uso. Leia-os atentamente.</p>
+
+    <h3>1. Aceitação dos Termos</h3>
+    <p>Ao utilizar este site, você declara ter lido, compreendido e aceito todos os termos e condições aqui descritos.</p>
+
+    <h3>2. Uso do Site</h3>
+    <p>O conteúdo deste site é para uso informativo e para realização de pedidos. Você concorda em não utilizar o site para fins ilícitos ou não autorizados.</p>
+
+    <h3>3. Pedidos e Pagamentos</h3>
+    <p>Os pedidos estão sujeitos à disponibilidade e confirmação. Os preços e condições podem ser alterados sem aviso prévio. O pagamento deve ser realizado conforme as opções oferecidas no momento do pedido.</p>
+
+    <h3>4. Entregas</h3>
+    <p>As entregas são realizadas na região de São Bento do Sul e arredores, conforme prazos e taxas informados no momento do pedido.</p>
+
+    <h3>5. Propriedade Intelectual</h3>
+    <p>Todo o conteúdo deste site, incluindo textos, imagens e logotipos, é de propriedade da empresa e não pode ser reproduzido sem autorização.</p>
+
+    <h3>6. Limitação de Responsabilidade</h3>
+    <p>A empresa não se responsabiliza por danos indiretos decorrentes do uso deste site ou de informações nele contidas.</p>
+
+    <h3>7. Cancelamentos e Reembolsos</h3>
+    <p>Cancelamentos devem ser feitos antes do início do preparo do pedido. Reembolsos podem ser solicitados em até 7 dias corridos, conforme o Código de Defesa do Consumidor.</p>
+
+    <h3>8. Alterações nos Termos</h3>
+    <p>Estes termos podem ser alterados a qualquer momento, sem aviso prévio. Recomendamos a revisão periódica.</p>
+
+    <h3>9. Contato</h3>
+    <p>Em caso de dúvidas sobre estes Termos, entre em contato pelo e-mail: <a href="mailto:larissaferreiragb@gmail.com">larissaferreiragb@gmail.com</a>.</p>
+
+    <p><em>Última atualização: Maio de 2025.</em></p>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-col">
+            <h4>🍲 Larissa Ferreira Denck</h4>
+            <p>Alimentos preparados preponderantemente para consumo domiciliar em São Bento do Sul - SC.</p>
+            <p style="margin-top:12px;"><strong style="color:#fff;">CNPJ:</strong> 61.032.057/0001-67</p>
+        </div>
+        <div class="footer-col">
+            <h4>📞 Contato</h4>
+            <p>📧 <a href="mailto:larissaferreiragb@gmail.com">larissaferreiragb@gmail.com</a></p>
+            <p>📱 <a href="tel:+5547989115054">(47) 98911-5054</a></p>
+            <p>💬 <a href="https://wa.me/5547989115054" target="_blank">WhatsApp</a></p>
+        </div>
+        <div class="footer-col">
+            <h4>📍 Localização</h4>
+            <p>Rua Wilfried Antonio Weihermann, 240</p>
+            <p>Bairro Lencol — São Bento do Sul/SC</p>
+            <p>CEP: 89289-590</p>
+        </div>
+        <div class="footer-col">
+            <h4>🔗 Institucional</h4>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="politicas.html">Políticas de Privacidade</a>
+            <a href="termos.html">Termos de Uso</a>
+        </div>
+        <div class="footer-col">
+            <h4>🕒 Horário</h4>
+            <div class="footer-horario">
+                <div class="hora" id="horarioFooter">Carregando...</div>
+                <p style="font-size:0.8rem; margin:0; opacity:0.85;">Segunda a Sábado — 08h às 20h</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 61.032.057 Larissa Ferreira Denck — CNPJ: 61.032.057/0001-67.</p>
+        <p>Atividade Principal: 56.20-1-04 — Fornecimento de alimentos preparados preponderantemente para consumo domiciliar.</p>
+    </div>
+</footer>
+
+<script>
+    function atualizarHorario() {
+        const agora = new Date();
+        const dia = String(agora.getDate()).padStart(2, '0');
+        const mes = String(agora.getMonth() + 1).padStart(2, '0');
+        const ano = agora.getFullYear();
+        const horas = String(agora.getHours()).padStart(2, '0');
+        const minutos = String(agora.getMinutes()).padStart(2, '0');
+        const segundos = String(agora.getSeconds()).padStart(2, '0');
+        const el = document.getElementById('horarioFooter');
+        if (el) el.textContent = `${dia}/${mes}/${ano} — ${horas}:${minutos}:${segundos}`;
+    }
+    atualizarHorario();
+    setInterval(atualizarHorario, 1000);
+</script>
+
+</body>
+</html>
